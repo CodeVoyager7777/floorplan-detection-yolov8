@@ -1,0 +1,47 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Output files and data
+detection_data.zip
+detection_data/
+*.csv
+*.geojson
+*.json
+*.pgw
+*.prj
+*.dbf
+*.shp
+*.shx
+*.cpg
+*.tif
+*.tiff
+!roboflow_test_output.json
+
+# Temporary images
+_uploaded_tmp.png
+faint_crop.png
+debug_*.png
+gn_visualization_result.png
+eroded.tif*
+ACAD*.png.aux.xml
+
+# macOS
+.DS_Store
+
+# Streamlit
+.streamlit/
+
+# Testing/Benchmarking Datasets
+Floor-Plan-Walls-*/
+Wall-FloorPlan-*/

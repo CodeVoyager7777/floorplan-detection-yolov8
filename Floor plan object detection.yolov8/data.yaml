@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 1
+names: ['door']
+
+roboflow:
+  workspace: laksh-makkar
+  project: floor-plan-object-detection-d5eyy
+  version: dataset
+  license: Public Domain
+  url: https://universe.roboflow.com/laksh-makkar/floor-plan-object-detection-d5eyy/dataset/dataset
