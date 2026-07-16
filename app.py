@@ -341,7 +341,7 @@ def main():
               st.image(
                   uploaded_image,
                   caption="Original Image",
-                  use_container_width=True
+                  use_column_width=True
               )
 
         else:
@@ -532,7 +532,7 @@ def main():
                 st.image(
                     res_plotted,
                     caption='Architecture Detected (Blue: Walls, Green: Doors)',
-                    use_container_width=True
+                    use_column_width=True
                 )
 
                 st.markdown("---")
@@ -694,7 +694,7 @@ def main():
                                 vis_img_path = pathlib.Path("gn_visualization_result.png")
                                 if vis_img_path.exists():
                                     with st.expander("View & Download Ground Truth Visualization Image"):
-                                        st.image(str(vis_img_path), use_container_width=True, caption="Green: TP | Red: FP | Blue: FN")
+                                        st.image(str(vis_img_path), use_column_width=True, caption="Green: TP | Red: FP | Blue: FN")
                                         
                                         with open(vis_img_path, "rb") as f:
                                             st.download_button(
